@@ -1,0 +1,178 @@
+body {
+  background-color: #0a0a0f !important;
+  color: #e8e8f0 !important;
+  font-family: "DM Sans", sans-serif !important;
+}
+
+/* NAVBAR */
+.navbar.bg-secondary-subtle {
+  background-color: rgba(10, 10, 15, 0.9) !important;
+  backdrop-filter: blur(16px);
+  border-bottom-color: rgba(255, 255, 255, 0.08) !important;
+}
+.nav-link.text-black {
+  color: #9191a8 !important;
+  font-weight: 600;
+}
+.nav-link.text-black:hover {
+  color: #e8e8f0 !important;
+}
+
+/* HERO */
+.hero-title {
+  color: #6366f1;
+}
+
+.lead {
+  color: #9191a8 !important;
+}
+
+.btn-primary {
+  background-color: #6366f1 !important;
+  border-color: #6366f1 !important;
+  font-weight: 700;
+}
+.btn-primary:hover {
+  background-color: #a78bfa !important;
+  border-color: #a78bfa !important;
+  box-shadow: 0 0 20px rgba(99, 102, 241, 0.4);
+}
+.btn-outline-secondary {
+  border-color: rgba(255, 255, 255, 0.15) !important;
+  color: #9191a8 !important;
+  font-weight: 700;
+}
+.btn-outline-secondary:hover {
+  background-color: rgba(255, 255, 255, 0.05) !important;
+  color: #e8e8f0 !important;
+  border-color: #6366f1 !important;
+}
+
+.border-bottom {
+  border-bottom-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+/* SECTION TITLE */
+h1.text-center {
+
+  color: #6366f1;
+  
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+/* CARDS */
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+p {
+  padding-bottom: 1rem;
+}
+
+h5 {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #e8e8f0 !important;
+  font-family: "Syne", sans-serif;
+}
+
+.card {
+  border-radius: 25px;
+  background-color: #16161f !important;
+  border: 1px solid rgba(255, 255, 255, 0.07) !important;
+}
+
+.card .card-body {
+  background-color: #16161f !important;
+  border-radius: 0 0 25px 25px;
+}
+
+.card hr {
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.card img {
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  filter: brightness(0.85) saturate(0.9);
+  transition: filter 0.2s ease-out;
+}
+
+.card:hover img {
+  filter: brightness(1) saturate(1);
+}
+
+.card svg {
+  position: absolute;
+  top: 19rem;
+  transition: all 0.2s ease-out;
+  filter: drop-shadow(2px -9px 4px rgba(99, 102, 241, 0.2));
+}
+
+/* Make the wave match dark card bg */
+.card svg path {
+  fill: #16161f !important;
+}
+
+.card:hover svg {
+  filter: drop-shadow(2px -9px 4px rgba(99, 102, 241, 0.45));
+}
+
+.box-shadow {
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.6);
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.box-shadow:hover {
+  -webkit-box-shadow: 0 20px 40px rgba(99, 102, 241, 0.25);
+  box-shadow: 0 20px 40px rgba(99, 102, 241, 0.25);
+  border-color: rgba(99, 102, 241, 0.35) !important;
+  -webkit-transform: translateY(-15px);
+  -moz-transform: translateY(-15px);
+  -ms-transform: translateY(-15px);
+  -o-transform: translateY(-15px);
+  transform: translateY(-15px);
+}
+
+i {
+  position: absolute;
+  top: 18rem;
+  right: 2rem;
+  color: white;
+  font-size: 3rem;
+  background: linear-gradient(133deg, rgba(99, 102, 241, 1) 0%, rgba(167, 139, 250, 1) 50%, rgba(56, 189, 248, 1) 100%);
+  padding: 1rem;
+  border-radius: 100%;
+  transition: all 0.6s ease-in-out;
+}
+
+.card:hover i {
+  transform: rotate(-180deg);
+}
+
+i:hover {
+  box-shadow: rgba(99, 102, 241, 0.4) 0px 30px 60px -12px inset,
+    rgba(167, 139, 250, 0.7) 0px 18px 36px -18px inset;
+}
+.card {
+    border-radius: 20px;
+}
+.card img {
+    height: 300px;
+    border-radius: 20px;
+}
+.box {
+    border-radius: 20px;
+}
+
+.card a {
+    text-decoration: none;
+    
+}

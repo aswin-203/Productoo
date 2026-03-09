@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Productoo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+      body {
+        background-color: #0a0a0f !important;
+        color: #e8e8f0 !important;
+        font-family: 'DM Sans', sans-serif !important;
+      }
+
+      h1, h2, h3, h4, h5, h6, .display-4, .display-5, .h4, .fs-5, .btn, .nav-link, .navbar-brand {
+        font-family: 'Syne', sans-serif !important;
+      }
+
+      /* NAVBAR */
+      .navbar.bg-secondary-subtle {
+        background-color: rgba(10,10,15,0.9) !important;
+        backdrop-filter: blur(16px);
+        border-bottom-color: rgba(255,255,255,0.08) !important;
+      }
+      .nav-link.text-black { color: #9191a8 !important; font-weight: 600; }
+      .nav-link.text-black:hover { color: #e8e8f0 !important; }
+
+      /* HERO */
+      .hero { background-color: #0a0a0f; border-bottom-color: rgba(255,255,255,0.08) !important; }
+      .hero .display-4 {
+        background: linear-gradient(135deg, #f0f0ff 0%, #a78bfa 55%, #38bdf8 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+      .hero .lead { color: #9191a8 !important; }
+
+      .btn-primary {
+        background-color: #6366f1 !important;
+        border-color: #6366f1 !important;
+        font-weight: 700;
+      }
+      .btn-primary:hover {
+        background-color: #a78bfa !important;
+        border-color: #a78bfa !important;
+        box-shadow: 0 0 20px rgba(99,102,241,0.4);
+      }
+      .btn-outline-secondary {
+        border-color: rgba(255,255,255,0.15) !important;
+        color: #9191a8 !important;
+        font-weight: 700;
+      }
+      .btn-outline-secondary:hover {
+        background-color: rgba(255,255,255,0.05) !important;
+        color: #e8e8f0 !important;
+        border-color: #6366f1 !important;
+      }
+      .hero img {
+        filter: brightness(0.8);
+        box-shadow: 0 20px 60px rgba(0,0,0,0.6) !important;
+        border-color: rgba(99,102,241,0.25) !important;
+        width: 700px; height: 300px; object-fit: cover; border-radius: 20px;
+      }
+
+      /* ABOUT */
+      .text-secondary { color: #6366f1 !important; }
+      .display-5 { color: #f0f0ff !important; }
+
+      .card {
+        background-color: #16161f !important;
+        border-color: rgba(255,255,255,0.07) !important;
+        transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+      }
+      .card:hover {
+        transform: translateY(-4px);
+        border-color: rgba(99,102,241,0.35) !important;
+        box-shadow: 0 16px 48px rgba(99,102,241,0.1) !important;
+      }
+      .card-body.bg-white { background-color: #16161f !important; }
+      .link-dark { color: #f0f0ff !important; }
+      .link-dark:hover { color: #a78bfa !important; }
+      .card-text.text-secondary { color: #9191a8 !important; }
+      .card img { filter: brightness(0.75) saturate(0.85); transition: filter 0.3s; }
+      .card:hover img { filter: brightness(0.9) saturate(1); }
+
+      /* FOOTER */
+      footer {
+        background-color: #111118;
+        border-top: 1px solid rgba(255,255,255,0.08);
+      }
+      footer .nav-link.text-body-secondary,
+      footer p.text-body-secondary {
+        color: #5a5a70 !important;
+        font-weight: 600;
+      }
+      footer .nav-link.text-body-secondary:hover { color: #e8e8f0 !important; }
+      footer .border-bottom { border-bottom-color: rgba(255,255,255,0.08) !important; }
+    </style>
+  </head>
+
+  <body>
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary-subtle border-bottom px-3 py-2">
+      <div class="container">
+        <a class="navbar-brand" href="/">
+          <svg height="40" viewBox="0 0 420 120" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="gradPurple" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#6366f1" />
+                <stop offset="100%" stop-color="#a78bfa" />
+              </linearGradient>
+              <linearGradient id="gradBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#38bdf8" />
+                <stop offset="100%" stop-color="#6366f1" />
+              </linearGradient>
+              <linearGradient id="gradCheck" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#38bdf8" />
+                <stop offset="100%" stop-color="#a78bfa" />
+              </linearGradient>
+              <linearGradient id="gradText" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#f0f0ff" />
+                <stop offset="100%" stop-color="#a78bfa" />
+              </linearGradient>
+            </defs>
+            <rect x="40" y="50" width="70" height="50" rx="12" fill="url(#gradPurple)" />
+            <rect x="35" y="40" width="70" height="50" rx="12" fill="url(#gradBlue)" />
+            <rect x="30" y="30" width="70" height="50" rx="12" fill="#16161f" stroke="rgba(99,102,241,0.4)" stroke-width="1.5" />
+            <path d="M48 55 L62 68 L88 42" stroke="url(#gradCheck)" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+            <text x="130" y="72" font-size="44" font-family="Syne, sans-serif" font-weight="800" fill="url(#gradText)">Productoo</text>
+          </svg>
+        </a>
+
+        <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link text-black" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link text-black" href="products.html">Products</a></li>
+            <li class="nav-item"><a class="nav-link text-black" href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar - ends -->
+
+    <!-- hero section starts -->
+    <div class="hero px-4 pt-5 my-5 text-center border-bottom py-4">
+      <h1 class="display-4 fw-bold text-body-emphasis">Welcome To Productoo</h1>
+      <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">
+          Productoo is built to simplify everyday productivity. Instead of
+          switching between multiple apps, Productoo provides essential tools in
+          one easy-to-use platform. Whether you're organizing your tasks,
+          generating secure passwords, or managing daily work, Productoo helps
+          you stay focused and efficient.
+        </p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+          <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Products</button>
+          <button type="button" class="btn btn-outline-secondary btn-lg px-4">Contact</button>
+        </div>
+      </div>
+      <div class="overflow-hidden" style="max-height: 30vh">
+        <div class="container px-5">
+          <img src="./assects/hero-img.jpg" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" loading="lazy" />
+        </div>
+      </div>
+    </div>
+    <!-- hero-section-end -->
+
+    <!-- about-us -->
+    <div class="container">
+      <section class="py-3 py-md-5 py-xl-8">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-10 col-lg-8">
+              <h3 class="fs-5 mb-2 text-secondary text-uppercase">About</h3>
+              <h2 class="display-5 mb-4">
+                Our journey began with a simple idea to make everyday
+                productivity easier and more accessible.
+              </h2>
+              <button type="button" class="btn btn-lg btn-primary mb-3 mb-md-4 mb-xl-5">Discover More</button>
+            </div>
+          </div>
+        </div>
+        <div class="container overflow-hidden">
+          <div class="row gy-4 gy-lg-0">
+            <div class="col-12 col-lg-6">
+              <article>
+                <div class="card border-0">
+                  <img class="card-img-top img-fluid m-0" loading="lazy" src="./assects/vision.png" alt="Our Vision" />
+                  <div class="card-body bg-white p-4">
+                    <div class="entry-header mb-3">
+                      <h2 class="card-title entry-title h4 mb-0">
+                        <a class="link-dark text-decoration-none" href="#!">Our Vision</a>
+                      </h2>
+                    </div>
+                    <p class="card-text entry-summary text-secondary mb-3">
+                      To create a simple and powerful productivity platform that helps people organize their work, manage tasks efficiently, and stay focused on what truly matters every day.
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="col-12 col-lg-6">
+              <article>
+                <div class="card border-0">
+                  <img class="card-img-top img-fluid m-0" loading="lazy" src="./assects/approch.png" alt="Our Approach" />
+                  <div class="card-body bg-white p-4">
+                    <div class="entry-header mb-3">
+                      <h2 class="card-title entry-title h4 mb-0">
+                        <a class="link-dark text-decoration-none" href="#!">Our Approach</a>
+                      </h2>
+                    </div>
+                    <p class="card-text entry-summary text-secondary mb-3">
+                     We design simple, reliable, and user-friendly tools that bring essential productivity features together, helping users manage tasks and work smarter in one place.
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- about-us end -->
+
+    <!-- footer -->
+    <footer class="py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Product</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Contact</a></li>
+      </ul>
+      <p class="text-center text-body-secondary">© 2025 Company, Inc</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
